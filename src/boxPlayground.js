@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
 const BoxPlayground = () => {
-  const [ballPosition, setBallPosition] = useState({ top: 0, left: 0, color: 'red' })
+  const [ballProperties, setBallProperties] = useState({ top: 0, left: 0, color: 'red' })
 
-  const { top, left, color } = ballPosition
+  const { top, left, color } = ballProperties
 
   const randomNumber = (min, max) => { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)
@@ -18,7 +18,7 @@ const BoxPlayground = () => {
 
   useEffect(() => {
     setInterval(() => {
-      setBallPosition({ top: randomNumber(0, 885), left: randomNumber(0, 885), color: randomColor() })
+      setBallProperties({ top: randomNumber(0, 885), left: randomNumber(0, 885), color: randomColor() })
     }, 3000);
   }, [])
 
