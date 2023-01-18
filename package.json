@@ -2,7 +2,7 @@
   "name": "cra-app-git-actions",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/OOOytun/cra-app-git-actions",
+  "homepage": "https://oooytun.github.io/cra-app-git-actions/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
