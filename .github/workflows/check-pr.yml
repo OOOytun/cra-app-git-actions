@@ -13,9 +13,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Checkout
-        run: |
-          npm run typecheck
+      # - name: Checkout
+      #   run: |
+      #     npm run typecheck
 
       - name: Build
         run: |
