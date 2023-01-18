@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const randomNumber = (min: number, max: number) => {
   // min and max included
