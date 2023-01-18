@@ -7,7 +7,6 @@ const App = () => {
   return (
     <div className="app">
       <BoxPlayground />
-      <div>trigger change</div>
     </div>
   );
 };
