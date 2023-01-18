@@ -20,18 +20,22 @@ const BoxPlayground = () => {
   const { top, left, color } = ballProperties;
 
   useEffect(() => {
-    setInterval(() => {
+    const ballInterval = setInterval(() => {
       setBallProperties({
         top: randomNumber(0, 885),
         left: randomNumber(0, 885),
         color: randomColor(),
       });
-    }, 3000);
+    }, 1000);
   }, []);
 
   return (
     <div className="container">
-      <div className="ball" style={{ top, left, background: color }} />
+      <div
+        className="ball"
+        style={{ top, left, background: color }}
+        onMouseEnter={() => alert('congratz on catching the ball')}
+      />
     </div>
   );
 };
