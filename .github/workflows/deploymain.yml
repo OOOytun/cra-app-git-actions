@@ -15,7 +15,8 @@ jobs:
     #     node-version: [16.x]
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
@@ -28,8 +29,8 @@ jobs:
 
     - name: Deploy
       run: |
-        git config --global user.email "oytun@oakslab.com"
         git config --global user.name "OOOytun"
+        git config --global user.email "oytun@oakslab.com"
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         npm run deploy
 
