@@ -32,7 +32,6 @@ code {
   transition: all 0.5s;
   height: 15px;
   width: 15px;
-  background: red;
   border-radius: 50%;
   position: absolute;
 }

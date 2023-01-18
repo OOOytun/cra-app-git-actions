@@ -5,8 +5,7 @@ import BoxPlayground from './boxPlayground';
 const App= () =>  {
   return (
     <div className='app'>
-
-    <BoxPlayground />
+      <BoxPlayground />
     </div>
   );
 }
