@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const randomNumber = (min: string, max: number) => {
+const randomNumber = (min: number, max: number) => {
   // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
