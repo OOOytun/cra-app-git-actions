@@ -20,7 +20,7 @@ const BoxPlayground = () => {
   const { top, left, color } = ballProperties;
 
   useEffect(() => {
-    const ballInterval = setInterval(() => {
+    setInterval(() => {
       setBallProperties({
         top: randomNumber(0, 885),
         left: randomNumber(0, 885),
